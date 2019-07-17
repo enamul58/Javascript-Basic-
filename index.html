@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1 id="heading">this is heading tag</h1>
+
+        <p>hello enamul.</p>
+        <p>hello mim.</p>
+        <p>hello alif.</p>
+        <p>hello sohag.</p>
+        <p>hello piash.</p>
+        <p>hello shamim.</p>
+
+        <a href="">link one</a>
+        <a href="">link two</a>
+        <a href="">link three</a>
+        <a href="">link four</a>
+        <a href="">link five</a>
+
+
+       <script>
+
+           var paragraphElement = document.getElementsByTagName('p');
+           // for( var key in paragraphElement){
+           //     document.write(paragraphElement[key].innerHTML+'<br>')
+           // }
+           for( var key = 0; key < paragraphElement.length; key++ ){
+               document.write('<br>'+paragraphElement[key].innerHTML);
+           }
+
+           var x = 10;
+           var y = 3;
+           document.write(x+y);
+           document.write('<br>')
+           document.write(x*y);
+           document.write('<br>')
+           document.write(x-y);
+           document.write('<br>')
+           document.write(x/y);
+           document.write('<br>')
+           document.write(x%y);
+           document.write('<br>')
+           var firstName = "Md.Enamul";
+           var lastName = "Haque Sarker";
+           document.write('Full Name Is: '+firstName+' '+lastName);
+           var x = 10;
+           document.write('<br>')
+           document.write(x++);
+           document.write('<br>');
+           document.write(x);
+           var x = 10;
+           var y = 20;
+           document.write('<br>');
+           document.write(x += y);
+           document.write('<br>');
+           document.write(x -= y);
+           document.write('<br>');
+           document.write(x *= y);
+           document.write('<br>');
+           document.write(x /= y);
+           document.write('<br>');
+           document.write(x %= y);
+           document.write('<br>');
+
+           // Conditional Operator
+           var x = 10;
+           var y = 20;
+
+           document.write('<br>');
+           document.write(x < y); //true
+           document.write('<br>');
+           document.write(x <= y); //true
+           document.write('<br>');
+           document.write(x > y); //false
+           document.write('<br>');
+           document.write(x >= y); //false
+           document.write('<br>');
+           document.write(x == y); //false
+           document.write('<br>');
+           document.write(x != y); //true
+           document.write('<br>');
+           document.write(x === y); //false
+           document.write('<br>');
+           document.write( x !== y ); //true
+           document.write('<br>');
+
+           var x = 0;
+           switch (x) {
+               case 5:
+                   document.write("Hello World");
+                   break;
+               case 10:
+                   document.write("Hello Bangladesh");
+                   break;
+               case 2:
+                   document.write("Hello Dhaka");
+                   break;
+               case 3:
+                   document.write("Hello Kawranbazar");
+                   break;
+               default:
+                   document.write("hello enamul");
+           }
+           document.write('<br>')
+           var x , n = 15;
+           for( x = 1; x <= n;){
+                document.write(x);
+                document.write('<br>')
+               x++;
+           }
+
+           // var data = new Array();
+           // var data1 = Array();
+            var data = [];
+            data[0] = 10;
+            data[1] = 20;
+            data[2] = 30;
+
+            // data['name'] = "enamul";
+            // data['city'] = 'bogura';
+            // data['country'] = 'bangladesh';
+            // document.write(data[1]);
+            // document.write(data['city']);
+           var data = [10, 20, 30, 40];
+           document.write(data.length-1);
+           //var data = ['mim','alif','sohag','piash','samim'];
+            for( var key in data){
+             document.write('<br>', data[key]);
+           }
+
+            // function demo(){
+            //     var firstName = "Md.Enamul Haque";
+            //     var lastName = "Sarker";
+            //     var fullName = firstName +' '+ lastName;
+            //     document.write(fullName);
+            // }
+           function demo( firstName, lastName){
+               var fullName = firstName +' '+ lastName;
+               document.write(fullName);
+           }
+            document.write('<br/>================<br/>');
+             demo('Md.Enamul Haque', 'sarker');
+            document.write('<br/>================<br/>');
+            demo('Amdadul','Haque');
+            document.write('<br/>================<br/>');
+            demo('Monirul', 'Islam');
+
+
+        </script>
+    </body>
+</html>
